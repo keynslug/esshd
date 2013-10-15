@@ -1,0 +1,15 @@
+{application, esshd, [
+    {description, "esshd"},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        lager,
+        crypto,
+        public_key,
+        ssh
+    ]},
+    {mod, {esshd, []}},
+    {env, []}
+]}.
